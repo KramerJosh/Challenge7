@@ -22,20 +22,20 @@ const questions = [
     name: "installation",
   },
   {
+    type: "list",
+    message: "which license would you like to add?",
+    choices: ["mit", "open-source", "option-3"],
+    name: "usage",
+  },
+  {
     type: "usage information",
     message: "what are your contribution guidelines?",
-    name: "contribution",
+    name: "contributing",
   },
   {
     type: "input",
     message: "what test instructions should we include?",
-    name: "instructions",
-  },
-  {
-    type: "list",
-    message: "which license would you like to add?",
-    choices: ["mit", "open-source", "option-3"],
-    name: "license",
+    name: "tests",
   },
   {
     type: "input",
@@ -50,11 +50,9 @@ const questions = [
 ];
 
 
-
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.appendFile(fileName, data, (err) => {
+  fs.appendFileSync(fileName, data, (err) => {
     if (err) console.log(err);
   });
 }
@@ -71,7 +69,7 @@ function init() {
     // Add TOC
     writeToFile(
       fileTitle,
-      "\n" +
+        "\n" +
         "# TOC" +
         "\n" +
         "1. [Description](#Description)" +
