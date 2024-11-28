@@ -3,6 +3,28 @@ import { error } from "console";
 import fs, { write } from "fs";
 import inquirer from "inquirer";
 
+
+// Function to generate markdown for the README
+const generateMarkdown = (title, sections) => {
+    let toc = '## Table of Contents\n';
+    let content = `# ${title}\n\n`;
+  
+    // Generate Table of Contents and sections
+    sections.forEach((section, index) => {
+      const sectionTitle = section.title;
+      const sectionAnchor = sectionTitle.toLowerCase().replace(/\s+/g, '-');
+      
+      // Add to ToC
+      toc += `- [${sectionTitle}](#${sectionAnchor})\n`;
+      
+      // Add section content
+      content += `## ${sectionTitle}\n\n${section.content}\n\n`;
+    });
+  
+    // Combine ToC and content
+    return `${content}\n${toc}`;
+  };
+
 // TODO: Create an array of questions for user input
 
 const questions = [
@@ -49,53 +71,3 @@ const questions = [
   },
 ];
 
-
-
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-  fs.appendFile(fileName, data, (err) => {
-    if (err) console.log(err);
-  });
-}
-
-// TODO: Create a function to initialize app
-function init() {
-  inquirer.prompt(questions).then((answers) => {
-    console.log(answers.title);
-    const fileTitle = answers.title + ".md";
-    // create the file
-    fs.writeFile(fileTitle, "# " + answers.title, (err) => {
-      if (err) console.log(err);
-    });
-    // Add TOC
-    writeToFile(
-      fileTitle,
-      "\n" +
-        "# TOC" +
-        "\n" +
-        "1. [Description](#Description)" +
-        "\n" +
-        "2. [Installation](#Installation)" +
-        "\n" +
-        "3. [Usage](#Usage)" +
-        "\n" +
-        "4. [Contributing](#Contributing)" +
-        "\n" +
-        "5. [Tests](#Tests)"
-    );
-    // Add Description
-    writeToFile(
-      fileTitle,
-      "\n" +
-        `<div id='Description'/>` +
-        "\n" +
-        "# Description" +
-        "\n" +
-        answers.description
-    );
-  });
-}
-
-// Function call to initialize app
-init();
