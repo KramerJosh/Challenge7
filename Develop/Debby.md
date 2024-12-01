@@ -1,6 +1,6 @@
-# Josh
-
- [![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)
+# Debby
+'
+' [![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)
 # TOC
 1. [Description](#Description)
 2. [Installation](#Installation)
@@ -11,12 +11,12 @@
 <div id='Description' /> 
  
  ## Description 
- Test 
+ Dinkos 
 
 <div id='Installation' /> 
  
  ## Installation 
- Dinko 
+ Puppy 
 
 <div id='Usage' /> 
  
@@ -26,14 +26,14 @@
 <div id='Contributing' /> 
  
  ## Contributing 
- Puppy 
+ Doggy 
 
 <div id='Tests' /> 
  
  ## Tests 
- inscrutions 
+ Test 
 
 <div id='Questions' /> 
  
  ## Questions 
- For more information, please reach out to [mailto:Email](Email) or visit [GitHub](GitHub). 
+ For more information, please reach out to [mailto:email](email) or visit [name](name). 

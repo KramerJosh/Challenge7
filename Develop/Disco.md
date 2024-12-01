@@ -1,6 +1,9 @@
-# Josh
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
- [![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)
+
+
+# Disco
+
 # TOC
 1. [Description](#Description)
 2. [Installation](#Installation)
@@ -11,29 +14,29 @@
 <div id='Description' /> 
  
  ## Description 
- Test 
+ Doggy 
 
 <div id='Installation' /> 
  
  ## Installation 
- Dinko 
+ Install on the web 
 
 <div id='Usage' /> 
  
  ## Usage 
- Hippocratic 3.0 
+ open-source 
 
 <div id='Contributing' /> 
  
  ## Contributing 
- Puppy 
+ Keep it DRY 
 
 <div id='Tests' /> 
  
  ## Tests 
- inscrutions 
+ make sure the lorem is Ipsumed 
 
 <div id='Questions' /> 
  
  ## Questions 
- For more information, please reach out to [mailto:Email](Email) or visit [GitHub](GitHub). 
+ For more information, please reach out to [kramer@nyu.edu](kramer@nyu.edu) or visit [kramerjosh@github.com](kramerjosh@github.com). 
