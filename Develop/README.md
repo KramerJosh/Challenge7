@@ -1,6 +1,9 @@
 # README
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[video walkthru](https://drive.google.com/file/d/1kzOuRJZ-1uBSxyNBKU64cve69JS1Zdk-/view)
+
 # TOC
 1. [Description](#Description)
 2. [Installation](#Installation)
